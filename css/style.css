@@ -1,17 +1,25 @@
 /** uNIVERSAL **/
 * {
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
-body{
-    background: -webkit-linear-gradient(to left, #FAFFD1, #A1FFCE);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #FAFFD1, #A1FFCE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: #A1FFCE;  /* fallback for old browsers */
+
+body {
+    background: -webkit-linear-gradient(to left, #FAFFD1, #A1FFCE) !important;  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #FAFFD1, #A1FFCE) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #A1FFCE !important;  /* fallback for old browsers */ 
+    max-width: 100%;
+    margin: auto;
 }
+
 img {
     box-shadow: 3px 5px 10px white;
     height: auto;
+    max-width: 100%;
+    /*
     width: 600px;
+    */
 }
 
 h1 {
@@ -23,6 +31,7 @@ h1 {
 }
 
 /*** NAVIGATION ***/
+
 #navBar ul {
     background-color: grey;
     border-bottom: 2px solid white;
@@ -35,10 +44,11 @@ h1 {
     color: white;
     display: inline;
     font-size: 20px;
-    padding-right: 120px;
-    padding-left: 150px;
+    padding-right: 200px;
+    padding-left: 200px;
     margin-left: 0;
     text-align: center;
+
 
 }
 
@@ -52,8 +62,9 @@ h1 {
 /** DO'S AND DON'TS **/
 
 #doAndDont {
-    border-top: 1px solid silver;
+
     margin-bottom: 30px;
+    max-height: 900px;
     padding-top: 50px;
     padding-bottom: 25px;
 }
@@ -61,7 +72,8 @@ h1 {
 #doAndDont img {
     box-shadow: 3px 5px 10px white;
     margin-top: 20px;
-    margin-left: 20px;
+    margin-left: 10%;
+    max-width: 70%;
 }
 
 
@@ -71,7 +83,8 @@ h1 {
     line-height: 40px;
     margin-top: 40px;
     margin-bottom: 20px;
-    margin-right: 105px;
+    max-width: 60%;
+    padding-right: 50px;
     text-align: left;
     text-decoration: underline;
     width: 650px;
@@ -79,15 +92,13 @@ h1 {
 
 /** RIPENESS INDICATOR **/
 
-#ripeIndicator{
-    border-top: 1px solid silver;;
-}
 
 #ripeIndicator img {
     float: right;
     margin-top: 80px;
     margin-bottom: 40px;
     margin-right: 80px;
+    max-width: 100%;
 }
 
 #ripeIndicator h2 {
@@ -110,7 +121,7 @@ h1 {
 /** Recipes **/
 
 #recipes {
-    border-top: 1px solid silver;
+
     margin-top: 150px;
     text-align: center;
 }
@@ -142,7 +153,7 @@ h1 {
 
 /*** CONTACT US **/
 #contact{
-    border-top: 1px solid silver;
+
     text-align: center;
     margin-top: 50px;
 }
@@ -157,12 +168,13 @@ h1 {
 
 #contact img {
  margin-top: 10px;
+ max-width: 100%;
 }
 
 /** ABOUT US **/
 
 #aboutUs {
-    border-top: 1px solid silver;
+
     margin-top: 60px;
     text-align: center;
     padding-bottom: 20px;
@@ -179,3 +191,4 @@ h1 {
 #aboutUs iframe {
     margin-top: 10px;
 }
+
